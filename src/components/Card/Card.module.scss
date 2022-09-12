@@ -1,0 +1,19 @@
+@import 'styles/breakpoints';
+
+.card {
+   width: 400px;
+   justify-content: center;
+   margin: 0 auto;
+
+   @include size-tablet {
+    width: 300px;
+   justify-content: center;
+   margin: 0 auto;
+}
+}
+
+.card input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}

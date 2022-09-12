@@ -1,0 +1,45 @@
+@import 'styles/breakpoints';
+
+.container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.inner {
+    margin-top: 200px;
+    display: flex;
+
+    @include size-tablet {
+        margin-top: 50px;
+    }
+
+    .titleItem {
+        font-family: 'Forum';
+        font-size: 64px;
+        letter-spacing: 0.03em;
+    
+        @include size-tablet {
+            font-size: 20px;
+        }
+    }
+
+    .titleImg {
+        margin-left: 85px;
+    
+        @include size-tablet {
+            margin-left: 25px;
+        }
+    
+        img {
+    
+            @include size-tablet {
+                width: 150px;
+            }
+        }
+    }
+}

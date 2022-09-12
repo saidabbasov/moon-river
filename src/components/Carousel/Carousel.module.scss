@@ -1,0 +1,14 @@
+@import 'styles/breakpoints';
+
+.carousel img {
+    width: 800px;
+    height: 500px;
+    margin-left: 300px;
+    border-radius: 20px;
+
+    @include size-tablet {
+        width: 100%;
+        height: 100%;
+        margin-left: 0
+    }
+}

@@ -1,0 +1,48 @@
+@import 'styles/breakpoints';
+
+footer {
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #272727;
+    color: #fff;
+    position: relative;
+}
+
+.follow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+}
+
+.follow input {
+    align-items: center;
+    background-color: #272727;
+    border: none;
+    border-bottom: 1px solid #Fff;
+    padding: 5px;
+}
+
+.innerTitle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+
+    @include size-tablet {
+        padding: 10px;
+        top: 0
+     }
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    padding: 20px;
+
+    @include size-tablet {
+       display: none;
+    }
+}

@@ -1,0 +1,11 @@
+@import 'styles/breakpoints';
+
+.corausel {
+    margin-top: 100px;
+}
+
+.head {
+    @include size-tablet {
+        display: none;
+    }
+}

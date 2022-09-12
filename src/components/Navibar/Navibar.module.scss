@@ -1,0 +1,17 @@
+@import 'styles/breakpoints';
+
+.navibar {
+    display:  none;
+    
+    .logo {
+        width: 230px;
+
+        @include size-tablet {
+            width: 200px;
+        }
+    }
+
+    @include size-tablet {
+        display: block;
+    }
+}
